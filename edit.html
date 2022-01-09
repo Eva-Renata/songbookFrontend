@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangbook Frontend</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script  src="/assets/js/editSong.js" type="module" defer></script>
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <button><a href="index.html">Songs list</a></button>
+            <button><a href="create-song.html">Create a song</a></button>
+            
+        </nav>
+        <h1>Edit a song</h1>
+    </header>
+
+    <section id="main">
+    
+        <form id="edit-form">
+            <fieldset>
+                <div class="opret-title">
+                    <label for="title" >Title</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <div class="opret-content">
+                    <label for="content" >Details</label>
+                    <textarea  name="content" required></textarea>
+                </div>
+                <select name="artist_id" id="select-artist" required>
+                    <option value="" >Select artist</option>
+                </select>
+                <button type="submit" id="create-btn" >Update the song</button>
+            </fieldset>
+        </form>
+            
+    </section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body header h1 {
+  text-align: center;
+  font-size: 4vh;
+}
+
+body header nav {
+  background-color: #E1E2E1;
+  margin-bottom: 3em;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header nav a, body header nav button {
+  color: black;
+  font-size: 3vh;
+  text-decoration: none;
+}
+
+body header nav a:hover, body header nav button:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+body #main {
+  background-color: #E1E2E1;
+}
+
+body #main .col-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+}
+
+body #main .col-2 table td {
+  text-align: center;
+  border: solid 1px gray;
+}
+
+body #main .col-2 #songDetails {
+  margin: 10%;
+}
+
+body #main #opret-form, body #main fieldset {
+  max-width: 500px;
+  margin: auto;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body #main #opret-form label, body #main #opret-form input, body #main #opret-form textarea, body #main fieldset label, body #main fieldset input, body #main fieldset textarea {
+  display: block;
+  width: 90%;
+  margin: 1em;
+  padding: 0.5em;
+  font-size: 2vh;
+}
+
+body #main #opret-form select, body #main #opret-form button, body #main fieldset select, body #main fieldset button {
+  display: block;
+  padding: 0.5em;
+  margin: 1em;
+  width: 90%;
+}

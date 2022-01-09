@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sangbook Frontend</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script  src="/assets/js/main.js" type="module" defer></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <button><a href="index.html">Songs list</a></button>
+            <button><a href="create-song.html">Create a song</a></button>
+            <form >
+                <input id="keyword" type="text" >
+                <button type="submit" id="search" >Søg</button>
+            </form>
+        </nav>
+        <h1>Songbook list</h1>
+    </header>
+
+    <section id="main">
+        <select>
+            <option value="">Sort songs</option>
+            <option value="sort=id&order=asc">Id Asc </option>
+            <option value="sort=id&order=desc">Id Desc </option>
+            <option value="sort=title&order=asc">Title Asc </option>
+            <option value="sort=title&order=desc">Title Desc </option>
+        </select>
+        <div class="col-2">
+            <table style="height: 150px;">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>  
+                <tbody id="songsTbody">
+                </tbody>  
+            </table>
+            <div id='songDetails'> </div>
+        </div>
+    </section>
 </body>
 </html>
